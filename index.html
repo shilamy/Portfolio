@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shilamy_dev | Modern Portfolio 2024</title>
-    <meta name="description" content="Shilamy_dev - Full Stack Developer Portfolio | Modern UI/UX, Java, JavaScript, Python | Interactive Portfolio">
+    <title>Shilamy_dev | Developer Portfolio</title>
+    <meta name="description" content="Sheila Mwangi - Software developer portfolio showcasing web development, UI/UX, data and technology projects.">
     
     <!-- SEO & Open Graph -->
     <meta name="keywords" content="portfolio, developer, fullstack, javascript, java, python, react, uiux">
     <meta property="og:title" content="Shilamy_dev | Portfolio">
-    <meta property="og:description" content="Modern full stack developer portfolio">
+    <meta property="og:description" content="Software development, UI/UX and technology portfolio">
     <meta property="og:image" content="assets/profile picture 2.png">
     
     <!-- Fonts -->
@@ -32,12 +32,13 @@
                 <span class="logo-text">SHILAMY_DEV</span>
             </a>
             
-            <ul class="nav-menu" role="menubar">
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
                 <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
                 <li><a href="#about" class="nav-link" data-section="about">About</a></li>
                 <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
                 <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
                 <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#blogs" class="nav-link" data-section="blogs">Blogs</a></li>
                 <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
             </ul>
             
@@ -45,7 +46,7 @@
                 <i class="bx bx-moon"></i>
             </button>
             
-            <button class="menu-toggle" id="menu-icon" aria-label="Toggle menu" aria-expanded="false">
+            <button class="menu-toggle" id="menu-icon" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
                 <i class="bx bx-menu"></i>
             </button>
         </div>
@@ -56,15 +57,14 @@
         <canvas class="particles-canvas" aria-hidden="true"></canvas>
         
         <div class="hero-content">
-            <div class="hero-badge" role="img" aria-label="Senior Full Stack Developer">👨‍💻 Senior Developer</div>
+            <div class="hero-badge" role="img" aria-label="Software Developer">👩‍💻 Software Developer</div>
             <h1 class="hero-title">
                 Hi, I'm <span class="gradient-text">Sheila</span>
             </h1>
             <span class="hero-subtitle">I build amazing</span>
             <span class="typewriter text" id="typewriter"></span>
             <p class="hero-description">
-                Full Stack Developer crafting responsive web applications and scalable backend systems.
-                Passionate about clean code, modern UI/UX, and creating digital experiences that delight users.
+                Software developer with an interest in building responsive web applications, practical information systems and thoughtful user experiences. I work across frontend development, backend technologies, data and ICT operations.
             </p>
             
             <div class="hero-cta">
@@ -78,14 +78,14 @@
             </div>
             
             <div class="hero-social">
-                <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/shilamy/" class="social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-linkedin'></i>
                 </a>
-                <a href="#" class="social-link" aria-label="GitHub" title="GitHub">
+                <a href="https://github.com/shilamy" class="social-link" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-github'></i>
                 </a>
-                <a href="#" class="social-link" aria-label="Twitter" title="Twitter">
-                    <i class='bx bxl-twitter'></i>
+                <a href="mailto:artbrand254@gmail.com" class="social-link" aria-label="Email" title="Email">
+                    <i class='bx bx-envelope'></i>
                 </a>
             </div>
         </div>
@@ -110,24 +110,22 @@
             
             <div class="about-grid">
                 <div class="about-text">
-                    <h3>Full Stack Developer with 3+ Years Experience</h3>
+                    <h3>Software Developer & Technology Professional</h3>
                     <p>
-                        I transform ideas into functional, scalable digital solutions. 
-                        From pixel-perfect UI designs to robust backend systems, I create 
-                        experiences that users love and businesses rely on.
+                        I enjoy translating ideas into useful digital solutions. My interests span responsive interfaces, backend systems, database-driven applications, data workflows and ICT operations.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Exp</span>
+                            <span class="stat-number">IT</span>
+                            <span class="stat-label">Foundation</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">10</span>
-                            <span class="stat-label">Projects</span>
+                            <span class="stat-number">Web</span>
+                            <span class="stat-label">Development</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">100</span>
-                            <span class="stat-label">% Success</span>
+                            <span class="stat-number">Data</span>
+                            <span class="stat-label">& ICT</span>
                         </div>
                     </div>
                 </div>
@@ -251,15 +249,15 @@
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web Apps</button>
                 <button class="filter-btn" data-filter="design">UI/UX</button>
-                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
             </div>
             
             <div class="projects-grid">
-                <div class="project-card" data-category="web">
+                <div class="project-card" data-category="design">
                     <div class="project-image">
                         <img src="assets/Projects/course-1.jpg" alt="Task Manager UI" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://www.figma.com/community/file/1379425935719309405" class="project-link" target="_blank" aria-label="View Task Manager Demo">
+                            <a href="https://www.figma.com/community/file/1379425935719309405" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager Demo">
                                 <i class='bx bx-link-external'></i>
                             </a>
                         </div>
@@ -274,11 +272,11 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-category="backend">
+                <div class="project-card" data-category="fullstack">
                     <div class="project-image">
                         <img src="assets/Projects/course-11.jpg" alt="Health Clinic System" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/shilamy/Clinic" class="project-link" target="_blank" aria-label="View Clinic System">
+                            <a href="https://github.com/shilamy/Clinic" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Clinic System">
                                 <i class='bx bx-link-external'></i>
                             </a>
                         </div>
@@ -295,9 +293,9 @@
 
                 <div class="project-card" data-category="web">
                     <div class="project-image">
-                        <img src="assets/Projects/course-4.jpg" alt="Mechanical Workshop" loading="lazy">
+                        <img src="assets/Projects/product list.png" alt="Mechanical Workshop" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://jade-creponne-bcc6f3.netlify.app/" class="project-link" target="_blank" aria-label="View Workshop Site">
+                            <a href="https://jade-creponne-bcc6f3.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Workshop Site">
                                 <i class='bx bx-link-external'></i>
                             </a>
                         </div>
@@ -311,6 +309,102 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/Projects/e-app/Screenshot (15).png" alt="E-commerce Application" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/shilamy/E-Commerce-patch-1/blob/master/README.md" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Workshop Site">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Application</h3>
+                        <p>Fully responsive online store for selling products</p>
+                        <div class="project-tech"> 
+                            <span>HTML/CSS/JavaScript</span>
+                            <span>php</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="project-card" data-category="fullstack">
+                                <div class="project-image">
+                                    <img src="assets/Projects/chama_app.png" alt="Chama Application" loading="lazy">
+                                    <div class="project-overlay">
+                                        <a href="https://github.com/shilamy/chama_app.git" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Workshop Site">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-info">
+                                    <h3>Chama Application</h3>
+                                    <p>Fully responsive application for managing community savings groups</p>
+                                    <div class="project-tech"> 
+                                        <span>HTML/CSS/JavaScript</span>
+                                        <span>php | Laravel</span>
+                                    </div>
+                                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Writing & Articles Section -->
+    <section id="blogs" class="writing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Writing &amp; Articles</h2>
+                <p class="section-subtitle">Ideas at the intersection of cognitive science, human learning and artificial intelligence</p>
+            </div>
+
+            <div class="writing-grid">
+                <article class="writing-card">
+                    <a class="writing-image" href="https://shilamy.medium.com/cognitive-science-meets-the-babys-mind-f8960bf74dd1" target="_blank" rel="noopener noreferrer" aria-label="Read Cracking the Code: Baby Brains and AI Learning">
+                        <img src="assets/blog1.jpg" alt="Visual for Cracking the Code: Baby Brains and AI Learning" loading="lazy">
+                        <span class="writing-category">AI &amp; Learning</span>
+                    </a>
+                    <div class="writing-content">
+                        <p class="writing-meta">September 2025 <span aria-hidden="true">•</span> Cognitive science</p>
+                        <h3>Cracking the Code: Baby Brains and AI Learning</h3>
+                        <p>Explores how the way babies learn, adapt and build an understanding of the world can offer useful perspectives on how artificial intelligence learns.</p>
+                        <div class="writing-actions">
+                            <a href="https://shilamy.medium.com/cognitive-science-meets-the-babys-mind-f8960bf74dd1" target="_blank" rel="noopener noreferrer">Read on Medium <i class="bx bx-right-arrow-alt"></i></a>
+                            <a href="https://www.linkedin.com/pulse/cracking-code-baby-brains-ai-learning-sheila-mwangi-dlqqf/" target="_blank" rel="noopener noreferrer">LinkedIn <i class="bx bx-link-external"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="writing-card">
+                    <a class="writing-image" href="https://www.linkedin.com/pulse/understanding-ai-through-lens-human-mind-sheila-mwangi-menrf" target="_blank" rel="noopener noreferrer" aria-label="Read Understanding AI Through the Lens of the Human Mind">
+                        <img src="assets/blog2.jpg" alt="Visual for Understanding AI Through the Lens of the Human Mind" loading="lazy">
+                        <span class="writing-category">Human Mind &amp; AI</span>
+                    </a>
+                    <div class="writing-content">
+                        <p class="writing-meta">July 2025 <span aria-hidden="true">•</span> Artificial intelligence</p>
+                        <h3>Understanding AI Through the Lens of the Human Mind</h3>
+                        <p>Considers what cognitive science can teach us about AI, and why human cognition involves more than information processing alone.</p>
+                        <div class="writing-actions">
+                            <a href="https://www.linkedin.com/pulse/understanding-ai-through-lens-human-mind-sheila-mwangi-menrf" target="_blank" rel="noopener noreferrer">Read on LinkedIn <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="writing-card">
+                    <a class="writing-image" href="https://shilamy.medium.com/the-birth-of-cognitive-science-and-artificial-intelligence-009099ba6900" target="_blank" rel="noopener noreferrer" aria-label="Read The Birth of Cognitive Science and Artificial Intelligence">
+                        <img src="assets/blog3.jpg" alt="Visual for The Birth of Cognitive Science and Artificial Intelligence" loading="lazy">
+                        <span class="writing-category">Cognitive Science</span>
+                    </a>
+                    <div class="writing-content">
+                        <p class="writing-meta">Research &amp; reflection</p>
+                        <h3>The Birth of Cognitive Science and Artificial Intelligence</h3>
+                        <p>Looks at the intellectual foundations of cognitive science and the development of artificial intelligence as related fields of inquiry.</p>
+                        <div class="writing-actions">
+                            <a href="https://shilamy.medium.com/the-birth-of-cognitive-science-and-artificial-intelligence-009099ba6900" target="_blank" rel="noopener noreferrer">Read on Medium <i class="bx bx-right-arrow-alt"></i></a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -324,20 +418,12 @@
             </div>
             
             <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class='bx bx-envelope'></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:artbrand254@gmail.com">artbrand254@gmail.com</a>
-                        </div>
-                    </div>
-                    
+                <div class="contact-info"> 
                     <div class="contact-item">
                         <i class='bx bxl-linkedin'></i>
                         <div>
                             <h4>LinkedIn</h4>
-                            <a href="#">Connect on LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/shilamy/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
                         </div>
                     </div>
                     
@@ -345,25 +431,25 @@
                         <i class='bx bxl-github'></i>
                         <div>
                             <h4>GitHub</h4>
-                            <a href="#">github.com/shilamy</a>
+                            <a href="https://github.com/shilamy" target="_blank" rel="noopener noreferrer">github.com/shilamy</a>
                         </div>
                     </div>
                 </div>
                 
                 <form class="contact-form" novalidate>
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" autocomplete="name" required>
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" autocomplete="email" required>
                         <span class="error-message"></span>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject">
+                        <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Your Message" aria-label="Your Message" rows="5" required></textarea>
                         <span class="error-message"></span>
                     </div>
                     <button type="submit" class="btn-primary submit-btn">
@@ -379,11 +465,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Shilamy_dev. Built with passion. All rights reserved.</p>
+                <p>&copy; <span>2024</span> Shilamy_dev. Built with passion. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://github.com/shilamy" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/shilamy/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                    <a href="mailto:artbrand254@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
                 </div>
             </div>
         </div>
